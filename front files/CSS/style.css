@@ -1,0 +1,488 @@
+/*.......................*/
+/*basic setup*/
+/*.......................*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #fff;
+    color: #555;
+    font-family: 'lato','Arial',sans-serif;
+    font-size: 20px;
+    font-weight:300;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/*.......................*/
+/*reusable component*/
+/*.......................*/
+
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 80px 0;
+}
+
+.box{
+   padding: 1%; 
+}
+/*.......................*/
+/*headings*/
+/*.......................*/
+h1,h2,h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+h1{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    color: #e67e22
+}
+
+h2{
+    color: #fff
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px; 
+    letter-spacing: 1px;
+
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/**paragraphs**/
+.long-copy{
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+
+/*.....FEATURES.......*/
+.section-features .long-copy{
+    margin-bottom: 30px;
+}
+
+/*...... LABLES ......*/
+.labels{
+    color : white;
+}
+
+/*.......................*/
+/*buttons*/
+/*.......................*/
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border  0.2s , color 0.2s;
+    
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+    
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active{
+    border: 1px solid #cf6d17;
+    
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+/*.......................*/
+/*reusable component*/
+/*.......................*/
+header{
+ background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(images/main.png);
+    background-size: cover;
+    background-position: center;
+    height:100vh;     
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*......LOGO........*/
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+/*.........navagition..........*/
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 55px;   
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;  
+}
+
+.main-nav li a{
+    padding: 8px 0px;
+    color: #e67e22;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a :active{
+    border-bottom: 2px solid #e67e22;
+}
+
+.icon-big{
+    font-size: 300%;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+.small-icon{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+     margin-right: 10px;
+   
+    /*secrets to align text and icons*/
+
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+/*.......MEALS>>>>>>>>>>>>*/
+.section-meals{
+    padding: 0;
+    width: auto;
+    height: auto;
+}
+
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+    
+}
+
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color:#000;
+
+}
+
+.meal-photo img{
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+    
+}
+
+.meal-photo img:hover{
+    opacity: 1;
+    transform: scale(1.03);
+    
+}
+
+/*........HOW.......*/
+.section-steps{
+    background-color: #f4f4f4
+}
+.step-box:first-child{
+    text-align: right;
+    margin-top: 30px;
+    padding-right: 3%;
+    
+}
+
+.step-box:last-child{
+    margin-top: 70px;
+    padding-left: 3%;
+}
+
+.app-screen{
+    width: 40%;
+}
+
+.works-step{
+    margin-bottom: 50px;
+    
+}
+
+.works-step:last-of-type{
+    margin-bottom: 80px;
+}
+
+.works-step div{
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+/*.......cities......*/
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature{
+    margin-bottom: 5px;
+}
+
+/*..links......*/
+
+a:link,
+a:active{
+    color:#e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid #e67e22;
+}
+
+/*.......Sign In Form .......*/
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #e67e22;
+  z-index: 9;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+/* Style of form container */
+.form-container {
+  padding: 10px;
+  background-color: black;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  border-radius: 200px;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+/* Full-width input fields */
+
+/* style of buttons */
+.form-container .btn {
+  background-color: palegreen;
+  color: black;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  display: inline-block;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+}
+
+/*  background color of the cancel button */
+.form-container .cancel {
+  background-color: grey;
+}
+
+/* Hover effects of buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+/*...... Sign Up Form ......*/
+
+.form-c {
+  padding: 10px;
+  background-color: black;
+}
+
+.form-c input[type=text], .form-c input[type=password], .form-c input[type=text], .form-c input[type=text], .form-c input[type=tel], .form-c input[type=tel],.form-c input[type=date],.form-c input[type=text], .form-c input[type=text], .form-c input[type=text] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 5px 0;
+  border: none;
+  border-radius: 200px;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-c input[type=text]:focus, .form-c input[type=password]:focus, .form-c input[type=text]:focus, .form-c input[type=text]:focus, .form-c input[type=tel]:focus, .form-c input[type=tel]:focus,.form-c input[type=date]:focus,.form-c input[type=text]:focus,.form-c input[type=text]:focus,.form-c input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.form-c .btn {
+  background-color: palegreen;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  display: inline-block;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+}
+
+.form-c .cancel {
+  background-color: grey;
+}
+
+/* Hover effects of buttons */
+.form-c .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.FC {
+  padding: 10px;
+  background-color: black;
+}
+.FC input[type=text], .FC input[type=radio], .FC input[type=radio] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  border-radius: 200px;
+  background: #f1f1f1;
+}
+.FC input[type=text]:focus, .FC input[type=radio]:focus, .FC input[type=radio]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.FC .btn {
+  background-color: palegreen;
+  color: black;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  display: inline-block;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+}
+
+/*  background color of the cancel button */
+.FC .cancel {
+  background-color: grey;
+}
+
+/* Hover effects of buttons */
+.FC .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
